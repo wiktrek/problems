@@ -13,5 +13,6 @@ int main() {
     }
     int i = floor((index) / 5);
     int j = index - i * 5;
-    cout << abs(2 - j) + abs(2 - i); 
+    cout << abs(2 - j) + abs(2 - i);
+    return 0; 
 }
