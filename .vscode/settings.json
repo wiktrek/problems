@@ -56,5 +56,6 @@
     "xtr1common": "cpp",
     "xutility": "cpp"
   },
-  "cSpell.words": ["codeforces"]
+  "cSpell.words": ["codeforces"],
+  "C_Cpp.errorSquiggles": "enabled"
 }
