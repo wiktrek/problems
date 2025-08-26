@@ -3,13 +3,13 @@
 #include <string>
 using namespace std;
 
-bool is_leap(int y) {
+bool is_leap(long long y) {
     if ((y % 4 == 0 && y% 100 != 0)|| y% 400 == 0) {
         return true;
     }
     return false;
 }
-int get_days(int m,int y) {
+int get_days(int m,long long y) {
     if (m == 2) {
         return is_leap(y) ? 28 : 29;
     }
@@ -30,7 +30,7 @@ int get_days(int m,int y) {
 string increase_day(string s) {
     int d = stoi(s.substr(0,2));
     int m = stoi(s.substr(2,2));
-    int y = stoi(s.substr(4));
+    long long y = stoll(s.substr(4));
     if (d == get_days(m,y)) {
         if (m == 12) {
             y+=1;
