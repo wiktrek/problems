@@ -87,7 +87,8 @@
     "text_encoding": "cpp",
     "thread": "cpp",
     "cinttypes": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "any": "cpp"
   },
   "cSpell.words": ["codeforces"],
   "C_Cpp.errorSquiggles": "enabled"
