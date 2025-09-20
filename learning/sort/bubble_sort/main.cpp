@@ -1,18 +1,18 @@
 /*
     O(n^2)
     swap ( nums[i], nums[j] = nums[j], nums[i] )
-    
+
 */
 #include <iostream>
 #include <vector>
 using namespace std;
 vector<int> bubble_sort(vector<int> nums) {
     for (int i = 0;i<nums.size();i++) {
-        for (int j =i;j<nums.size();j++) {
-            if (nums[i] > nums[j]) {
-                int r = nums[i];
-                nums[i] = nums[j];
-                nums[j] = r;
+        for (int j =0;j<nums.size()-i-1;j++) {
+            if (nums[j] > nums[j+1]) {
+                int r = nums[j];
+                nums[j] = nums[j + 1];
+                nums[j+1] = r;
             }
         }
     }
